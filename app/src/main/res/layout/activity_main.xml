@@ -8,26 +8,28 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_upload"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="Click_button_upload"
         android:text="사진 업로드" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:padding="150"
+        android:padding="30dp"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="Click_button_result"
         android:text="결과 확인" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
