@@ -14,12 +14,17 @@
         android:onClick="Click_button_upload"
         android:text="사진 업로드" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:padding="30dp"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/button_result"
@@ -34,4 +39,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="앨범에서 사진을 선택해주세요" />
+
 </LinearLayout>
